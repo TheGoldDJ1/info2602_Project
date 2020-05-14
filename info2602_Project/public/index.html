@@ -1,0 +1,38 @@
+<!-- THIS PAGE IS COMPLETE... DO NOT CHANGE!!! -->
+<!doctype html>
+<html>
+    <head>
+        <title>Login Page</title>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+           
+            <script src="signin.js"> </script>
+
+            <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+ 
+        <body>
+            <div class = "login"> 
+            <img src = "avatar.jpg" class = "avatar">
+
+            <h1>Login</h1>
+            <div id = "header"> </div>
+             <!-- <form> -->
+                <p>Username</p>
+                <input type = "email" placeholder="email" id="email"/>
+                <p>Password</p>
+                <input type = "password" placeholder = "password" id="password"/>
+                
+                <button onclick="signIn()" id="signIn"> Sign In </button>
+                <button onclick="signOut()" id="signOut"> Sign Out </button><br><br>
+                <a href = "#">Don't have an account?</a><br>
+                <button onclick="signUp()" id="signUp"> Sign Up </button><br><br>
+                <a href = "#">Lost your password?</a><br>
+                <a href = "#"> Don't have an account?</a><br>
+                
+             <!-- </form> -->
+            </div>
+        </body>
+    
+</html>

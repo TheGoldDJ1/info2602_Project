@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Remove Recipe </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+         <script>window.PAGE_NAME = 'remove';
+        callAll();</script>
+
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>   
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+        <script src="HomePage.js"> </script>			
+    </head>
+
+    <body>
+
+        <header class="large">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="AddNew.html">Add New Recipe</a></li>
+            <li><a class="active" href="RemoveRec.html">Remove A Recipe</a></li>
+            <li><a href= "index.html" onclick="signOut()" id="signOut"> SignOut</a></li>
+            </ul>
+        </header>
+
+        <br>
+        <br>
+
+        <div class="headertop"> 
+            THE RECIPE APP
+        </div>
+
+        <form class="flavinput">
+            <h1> <center> FILTER RECIPES BASED ON FLAVOUR </center></h1> 
+            <label> <b>FLAVOR:</b> 
+                <input id="flavor" name = "flavor" list="flav-names" type ="text" required/>
+                <datalist id= "flav-names">
+                    <option label = "Sweet" value ="Sweet"></option>
+                    <option label = "Sour" value= "Sour"></option>
+                    <option label = "Bitter" value ="Bitter"></option>
+                    <option label = "Spicy" value = "Spicy"></option>
+                    <option label = "Salty" value = "Salty"></option>
+                </datalist>
+            </label>
+        </form>
+        
+        <div class="buttonposition">
+            <button onclick="GetNames()" id="RemoveRecData"> Submit </button>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- end results will be placed here -->
+
+        <div class="endresult">
+            <h3> <center> CLICK ON A RECIPE BELOW TO DELETE </center></h3>
+            <!-- <div style='text-align: center;'>Please select a recipie to delete it</div> -->
+            <ul id="listName">
+            </ul>
+
+        </div>
+
+        
+
+    </body>
+
+</html>

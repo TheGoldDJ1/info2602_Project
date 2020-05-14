@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Add New Recipe</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+
+        <script>window.PAGE_NAME = 'addnew';</script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>  
+        <script src="HomePage.js"> </script>			
+    </head>
+
+    <body>
+
+        <header class="large">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a class="active" href="AddNew.html">Add New Recipe</a></li>
+            <li><a href="RemoveRec.html">Remove A Recipe</a></li>
+            <li><a href= "index.html" onclick="signOut()" id="signOut"> SignOut</a></li>
+            </ul>
+        </header>
+
+        <br>
+        <br>
+
+        <div class="headertop"> 
+            THE RECIPE APP
+        </div>
+
+        <form class="flavinput">
+            <h1> <center> SELECT A FLAVOR TO ADD </center></h1>
+            <label> <b>FLAVOR:</b>  
+                    <input id="Flavor" name = "flavor" list="flav-names" type ="text" required/>
+                    <datalist id= "flav-names">
+                        <option label = "Sweet" value ="Sweet"></option>
+                        <option label = "Sour" value= "Sour"></option>
+                        <option label = "Bitter" value ="Bitter"></option>
+                        <option label = "Spicy" value = "Spicy"></option>
+                        <option label = "Salty" value = "Salty"></option>
+                        <option label = "Other" value = "Other"></option>
+
+                    </datalist>
+            </label>       
+            <br>    
+            <h3> <center> ENTER NAME OF RECIPE BELOW </center></h3>
+            
+            <div class="AddName">
+                <!-- <label><b>NAME:</b> -->
+                    <input type = "text" placeholder = "Recipe Name" id="ToAddRecipeName"/>
+                <!-- </label> -->
+            </div>
+            
+            <h3> <center> ENTER EACH INGREDIENT ON A NEW LINE BELOW </center></h3>
+            <!-- <label> <b>INGREDIENTS:</b> -->
+                <textarea id ="Ingredients" name = "details" row = 10></textarea>  
+            <!-- </label> -->
+
+            <h3> <center> ENTER EACH STEP ON A NEW LINE BELOW </center></h3>
+
+            <!-- <label> <b>STEPS:</b> -->
+                <textarea id ="Steps" name = "details" row = "10" cols ="100"></textarea>  
+            <!-- </label> -->
+            
+        </form> 
+        
+        <div class="buttonposition">
+            <button onclick="GetLatestRecordAndAddNew()" id="AddNewRec"> Submit </button> 
+        </div>
+        
+        <br>   
+        <br> 
+        <br>
+        <br>
+        
+    </body>
+
+</html>

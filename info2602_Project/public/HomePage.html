@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Home Page </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+        <script>window.PAGE_NAME = 'home';
+        callAll();</script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>   
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+        <script src="HomePage.js"> </script>			
+    </head>
+  
+    <body> 
+   
+        <header class="large"> 
+            <li><a class="active" href="HomePage.html">Home</a></li>
+            <li><a href="AddNew.html">Add New Recipe</a></li>
+            <li><a href="RemoveRec.html">Remove A Recipe</a></li>
+            <li><a href= "index.html" onclick="signOut()" id="signOut"> SignOut</a></li>
+            </ul>
+        </header>
+
+        <br>
+        <br>
+  
+        <div class="headertop"> 
+            THE RECIPE APP
+        </div>  
+   
+        <form class="flavinput">
+            <h1> <center> Select a flavour from the dropdown below and click the submit button </center></h1>
+            <label> <b>FLAVOR:</b>   
+                    <input id="flavor" name = "flavor" list="flav-names" type ="text" required/>
+                    <datalist id= "flav-names">
+                        <option label = "Sweet" value ="Sweet"></option>
+                        <option label = "Sour" value= "Sour"></option>
+                        <option label = "Bitter" value ="Bitter"></option>
+                        <option label = "Spicy" value = "Spicy"></option>
+                        <option label = "Salty" value = "Salty"></option>
+                        <option label = "Other" value = "Other"></option>
+
+                    </datalist>    
+                </label>    
+        </form>           
+               
+        <div class="buttonposition">
+            <button onclick="GetNames()" id="procData"> Submit </button>
+        </div>
+          
+        <br> 
+        <br>     
+        <br> 
+        <br>     
+    
+        <div class="endresult">
+
+            <h2> Recipes Available: </h2> 
+            
+            <pre id="resultshere"></pre>    
+
+            <ul id="listName"></ul>
+            
+            <h2>YOUR RECIPIE</h2>
+
+            <ul id="list"></ul>   
+ 
+            <h2>Ingredients</h2>
+
+            <ul id="list2"></ul> 
+            
+            <h2>Steps</h2>
+            
+            <ul id="list3"></ul>
+
+            <br> 
+        </div>  
+ 
+    </body> 
+
+</html>

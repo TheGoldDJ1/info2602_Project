@@ -1,0 +1,123 @@
+	body {
+        margin: 20; 
+        padding: 0; 
+        border: 0; 
+        background-image: url('oak background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        background-position: center;
+    }
+    textarea {
+        padding: 10;
+        /* position: relative; */
+        width: 1000px;
+        height: 200px;
+        margin-left: 55px;
+        margin-right: 50px;
+        width: 85%;
+    }
+
+    header ul{
+		list-style-type: none;
+		float: right;
+	}
+
+	header li{
+		display: inline;
+		float: left;
+	}
+
+    header{ 
+		margin: 0;
+		padding: 0;
+		background: #242424;
+		width: 100%; 
+		position: fixed; 
+		z-index: 10; 
+	}
+
+	header a{ 
+		color: #7f7f7f; 
+		text-decoration: none; 
+		font-family: 'Aleo', serif; 
+		text-transform: uppercase; 
+		font-size: 26px; 
+	}
+
+	header a.active, header a:hover{ 
+		color: #ffffff; 
+	}
+
+	header li{ 
+		margin-right: 70px; 
+	}
+
+    .flavinput{
+        float: center;
+        margin-right: 200px;
+        margin-left: 200px;
+        padding-top:5%;
+        padding: 25px;
+        background-color: #6e6b5e ;
+        border-left: 10px grey solid;
+        border-top: 10px grey solid;
+        border-right: 10px grey solid;
+    }
+
+    .headertop{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        font-style: italic;
+        padding:0;
+        color:#ffffff;
+
+    }
+
+    .flavinput .flavor-form{
+        padding-bottom:20px;
+    }
+
+    .flavinput label{
+        display:block;
+    }
+
+    .flavinput input[type="text"]{
+        padding:10px;
+        width: 80%;
+    }
+
+    .endresult{
+        margin-right: 200px;
+        margin-left: 200px;
+        background-color: #6e6b5e ;
+        border-left: 10px grey solid;
+        border-top: 10px grey solid;
+        border-right: 10px grey solid;
+        border-bottom: 10px grey solid; */
+    }
+
+    .buttonposition{
+       
+        margin-right: 200px;
+        margin-left: 200px;
+        padding: 10px;
+        background-color: #6e6b5e;
+        border-left: 10px grey solid;
+        border-right: 10px grey solid;
+        border-bottom: 10px grey solid;
+    }
+
+    .r-link {
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgb(152, 176, 236);
+        font-weight: bold;
+    }
+
+    .AddName [type="text"]{
+        margin-left: 70px;
+        padding:10px;
+        width: 85%;
+    }
